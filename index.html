@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/068007a90a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="bienvenido" id="bienvenido">
+            <h2>Listo para jugar</h2>
+            <button id="empezar" class="BtnEmpezar">Empezar</button>
+        </div>
+
+
+    </div>
+
+
+    <div id="div-agregar-palabras" class="agregar-palabras">
+        <h2>!Muy Bien completaste el juego¡ para seguir jugando necesitas agregar más palabras</h2>
+        <form id="form-agregar-palabras" class="form-agregar-palabras">
+            <input type="text" name="text" class="input" placeholder="Ingresa una palabra" id="input">
+            <span id="error" class="aviso"></span>
+            <button type="submit" id="button-agregar-palabras" class="BtnAgrgar">Agregar más Palabras</button>
+        </form>
+        <div class="buttons-agregar">
+            
+            <button id="volver-a-iniciar" class="BtnAgrgar">Iniciar el juego</button>
+        </div>
+    </div>
+    <div class="content" id="content-game">
+        <div class="contahorcado">
+            <div class="img">
+                <img id="img" src="" alt="img" />
+            </div>
+            <div class="contdatos">
+                <div class="divtxt">
+                    <textarea spellcheck="false" name="" id="letrasUtilizadas" cols="30" rows="10"></textarea>
+                </div>
+                <div class="avisos">
+                    <div class="errores">
+                        <p class="erroresp">Intentos maximos: 6</p>
+                        <p class="erroresp" id="erroresdos"></p>
+                    </div>
+                </div>
+                <div class="letras-a-descubrir" id="letras-a-descubrir">
+                </div>
+            </div>
+        </div>
+        <div class="containerkeys">
+            <div class="keys" id="keys1">
+                <input type="button" value="q" name="q" onclick="disp(q.value)" id="q">
+                <input type="button" value="w" name="w" onclick="disp(w.value)" id="w">
+                <input type="button" value="e" name="e" onclick="disp(e.value)" id="e">
+                <input type="button" value="r" name="r" onclick="disp(r.value)" id="r">
+                <input type="button" value="t" name="t" onclick="disp(t.value)" id="t">
+                <input type="button" value="y" name="y" onclick="disp(y.value)" id="y">
+                <input type="button" value="u" name="u" onclick="disp(u.value)" id="u">
+                <input type="button" value="i" name="i" onclick="disp(i.value)" id="i">
+                <input type="button" value="o" name="o" onclick="disp(o.value)" id="o">
+                <input type="button" value="p" name="p" onclick="disp(p.value)" id="p">
+            </div>
+            <div class="keys" id="keys2">
+                <input type="button" value="a" name="a" onclick="disp(a.value)" id="a">
+                <input type="button" value="s" name="s" onclick="disp(s.value)" id="s">
+                <input type="button" value="d" name="d" onclick="disp(d.value)" id="d">
+                <input type="button" value="f" name="f" onclick="disp(f.value)" id="f">
+                <input type="button" value="g" name="g" onclick="disp(g.value)" id="g">
+                <input type="button" value="h" name="h" onclick="disp(h.value)" id="h">
+                <input type="button" value="j" name="j" onclick="disp(j.value)" id="j">
+                <input type="button" value="k" name="k" onclick="disp(k.value)" id="k">
+                <input type="button" value="l" name="l" onclick="disp(l.value)" id="l">
+            </div>
+            <div class="keys" id="keys3">
+                <input type="button" value="z" name="z" onclick="disp(z.value)" id="z">
+                <input type="button" value="x" name="x" onclick="disp(x.value)" id="x">
+                <input type="button" value="c" name="c" onclick="disp(c.value)" id="c">
+                <input type="button" value="v" name="v" onclick="disp(v.value)" id="v">
+                <input type="button" value="b" name="b" onclick="disp(b.value)" id="b">
+                <input type="button" value="n" name="n" onclick="disp(n.value)" id="n">
+                <input type="button" value="m" name="m" onclick="disp(m.value)" id="m">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script defer src="script.js"></script>
+    <script defer src="palabras.js"></script>
+</body>
+
+
+</html>
